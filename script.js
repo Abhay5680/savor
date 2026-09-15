@@ -37,6 +37,12 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
     renderMenu(button.dataset.filter);
+     // Clicked button ko automatically screen ke center mein scroll kara do
+    button.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
   });
 });
 
