@@ -308,7 +308,8 @@ h2 { margin: 0; font: 600 clamp(40px, 4.2vw, 60px)/1.08 var(--serif); letter-spa
   .collage-small { height: 165px; }
   .collage-stamp { bottom: 5%; }
   .section-heading { margin-bottom: 35px; }
-  .category-tabs { justify-content: flex-start; overflow-x: auto; padding-bottom: 7px; margin-right: -20px; }
+  .category-tabs { justify-content: flex-start; overflow-x: auto; padding-bottom: 7px; margin-right: -20px; scrollbar-width: none; -ms-overflow-style: none; }
+  .category-tabs::-webkit-scrollbar { display: none; }
   .filter-button { flex: 0 0 auto; padding: 10px 17px; }
   .menu-grid { grid-template-columns: 1fr; gap: 18px; }
   .menu-card-image { height: 235px; }
